@@ -46,6 +46,10 @@ jobs:
       with:
         name: Package
         path: staging
+    - name: List folder contents
+      run: |
+        cd staging
+        ls  
     - name: Set up QEMU
       uses: docker/setup-qemu-action@v2
     - name: Set up Docker Buildx
